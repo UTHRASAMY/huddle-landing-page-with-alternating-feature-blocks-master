@@ -89,7 +89,8 @@ img {
 
 .section-one,
 .section-two,
-.section-three {
+.section-three,
+.section-four {
   display: flex;
   align-items: center;
   padding: 5rem;
@@ -106,7 +107,7 @@ img {
   padding: 2rem 0;
 }
 .sub-description {
-  font-size: 16px;
+  font-size: 14px;
   font-family: var(--ff-Open-Sans);
   font-weight: 400;
   opacity: 0.5;
@@ -118,13 +119,14 @@ img {
 }
 
 .section-four {
-  display: flex;
+  display: inline-block;
+
+  text-align: center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--clr-white);
   padding: 20px;
-  margin: 50px 90px;
+  width: 50%;
+  margin-left: 15rem;
   height: 175px;
   border-radius: 8px;
   border: 2px solid var(--clr-white);
@@ -137,12 +139,121 @@ img {
   padding-bottom: 30px;
 }
 
-. btn-free {
+.foot {
+  display: flex;
+
+  flex-direction: row;
+  background-color: var(--clr-Very-Dark-Cyan);
+  color: var(--clr-white);
+  padding: 160px 60px;
 }
 
-@media screen and (min-width: 375px) {
+.foot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 160px 60px;
 }
 
+.foot-huddle {
+  width: 25%;
+  padding-bottom: 25px;
+}
+
+.contact-img-1,
+.contact-img-2,
+.contact-img-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.contact-image {
+  width: 3%;
+  padding-bottom: 25px;
+}
+
+.contact-description {
+  font-size: 10px;
+  padding-bottom: 25px;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+footer li {
+  padding: 0.8rem;
+  font-size: 8px;
+}
+
+.footer-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border: 2px solid var(--clr-white);
+  border-radius: 50%;
+  margin: 0.4rem;
+}
+/* @media screen and (min-width: 375px) {
+  .header {
+    background-image: url(../images/bg-hero-mobile.svg);
+    background-color: var(--clr-white);
+    padding: 25px 60px;
+  }
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 20px;
+
+    padding-bottom: 2rem;
+  }
+
+  .description {
+    font-size: 12px;
+
+    padding-bottom: 2rem;
+  }
+  .btn-free {
+    padding: 10px 30px;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .section-one,
+  .section-two,
+  .section-three,
+  .section-four {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .sub-description {
+    padding: 0 2rem;
+  }
+
+  .section-two,
+  p {
+    padding: 0 5.7rem;
+  }
+
+  .section-three,
+  p {
+    padding: 0 6rem;
+  }
+} */
 @media screen and (min-width: 425px) {
 }
 @media screen and (min-width: 768px) {
